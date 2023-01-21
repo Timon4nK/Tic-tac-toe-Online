@@ -20,7 +20,7 @@ namespace Tic_tac_toe_Online
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            int[] field = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0};
         }
 
         private void button1_Click(object sender, EventArgs e)
