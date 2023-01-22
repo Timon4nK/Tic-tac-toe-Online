@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Tic_tac_toe_Online
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         /// Главная точка входа для приложения.

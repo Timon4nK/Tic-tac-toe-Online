@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Tic_tac_toe_Online
 {
-    internal class Bot
+    public class Bot
     {
+        bool isCross;
         public int Turn(int[] field)
         {
             return 0;
         }
 
-        public Bot()
+        public Bot(bool isCross)
         {
-
+            this.isCross = isCross;
         }
     }
 }
