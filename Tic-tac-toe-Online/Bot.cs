@@ -9,7 +9,7 @@ namespace Tic_tac_toe_Online
     public class Bot
     {
         bool isCross;
-        public int Turn(int[] field)
+        public int ChooseTurn(int[] field)
         {
             return 0;
         }
