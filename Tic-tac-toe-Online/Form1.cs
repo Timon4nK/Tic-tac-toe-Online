@@ -13,7 +13,7 @@ namespace Tic_tac_toe_Online
     public partial class Form1 : Form
     {
         static public bool isPlayerCross = false;
-        static public Bot opponent = new Bot(isPlayerCross);
+        static public Bot opponent = new Bot(isPlayerCross); // Потом переделать, чтобы создавался бот с выбранным поведением
 
         int[] field = new int[] { // 0 - пусто, 1 - круг, 2 - крест
                 0, 0, 0,
