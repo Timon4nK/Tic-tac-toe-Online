@@ -29,12 +29,17 @@ namespace Tic_tac_toe_Online
         private void Form1_Load(object sender, EventArgs e)
         {
             // Выбрать режим
-            // Добавить 9 кнопок            
+            // Добавить 9 кнопок
         }
 
-        public void Turn(int cellNumber, bool cross)
+        public bool Turn(int cellNumber, bool cross)
         {
-            if (field[cellNumber] == 0) field[cellNumber] = Convert.ToInt32(cross) + 1;
+            if (field[cellNumber] == 0)
+            {
+                field[cellNumber] = Convert.ToInt32(cross) + 1;
+                return true;
+            }
+            return false;
         }
 
         public void CheckWin()
@@ -44,74 +49,92 @@ namespace Tic_tac_toe_Online
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Turn(0, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(0, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Turn(1, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(1, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Turn(2, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(2, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Turn(3, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(3, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Turn(4, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(4, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Turn(5, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(5, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Turn(6, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(6, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Turn(7, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(7, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Turn(8, isPlayerCross);
-            CheckWin();
-            Turn(opponent.ChooseTurn(field), !isPlayerCross);
-            CheckWin();
+            if (Turn(8, isPlayerCross))
+            {
+                CheckWin();
+                Turn(opponent.ChooseTurn(field), !isPlayerCross);
+                CheckWin();
+            }
         }
     }
 }
