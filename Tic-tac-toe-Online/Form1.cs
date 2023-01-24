@@ -12,13 +12,14 @@ namespace Tic_tac_toe_Online
 {
     public partial class Form1 : Form
     {
-        static public bool isPlayerCross = false;
-        static public Bot opponent = new Bot(isPlayerCross); // Потом переделать, чтобы создавался бот с выбранным поведением
+        static public bool isPlayerCross;
+        static public Bot opponent; // Потом переделать, чтобы создавался бот с выбранным поведением
 
         int[] field = new int[] { // 0 - пусто, 1 - круг, 2 - крест
                 0, 0, 0,
                 0, 0, 0,
-                0, 0, 0};
+                0, 0, 0
+        };
 
         public Form1()
         {
@@ -29,6 +30,8 @@ namespace Tic_tac_toe_Online
         private void Form1_Load(object sender, EventArgs e)
         {
             // Выбрать режим
+            isPlayerCross = false;
+            opponent = new Bot(isPlayerCross);
             // Добавить 9 кнопок
         }
 
@@ -44,7 +47,34 @@ namespace Tic_tac_toe_Online
 
         public void CheckWin()
         {
-            // Если кто-то победил, вывести и предложить рестарт
+            if 
+               (field[0] == 0 && field[1] == 0 & field[2] == 0 || // верхняя строка
+                field[3] == 0 && field[4] == 0 & field[5] == 0 || // средняя строка
+                field[6] == 0 && field[7] == 0 & field[8] == 0 || // нижняя строка
+
+                field[0] == 0 && field[3] == 0 & field[6] == 0 || // левый столб
+                field[1] == 0 && field[4] == 0 & field[7] == 0 || // средний столб
+                field[2] == 0 && field[5] == 0 & field[8] == 0 || // правый столб
+
+                field[0] == 0 && field[4] == 0 & field[8] == 0 || // первая диагональ
+                field[6] == 0 && field[4] == 0 & field[2] == 0)   // вторая диагональ
+            {
+                // Круги побеждают
+            }
+            else if 
+               (field[0] == 1 && field[1] == 1 & field[2] == 1 || // верхняя строка
+                field[3] == 1 && field[4] == 1 & field[5] == 1 || // средняя строка
+                field[6] == 1 && field[7] == 1 & field[8] == 1 || // нижняя строка
+
+                field[0] == 1 && field[3] == 1 & field[6] == 1 || // левый столб
+                field[1] == 1 && field[4] == 1 & field[7] == 1 || // средний столб
+                field[2] == 1 && field[5] == 1 & field[8] == 1 || // правый столб
+
+                field[0] == 1 && field[4] == 1 & field[8] == 1 || // первая диагональ
+                field[6] == 1 && field[4] == 1 & field[2] == 1)   // вторая диагональ
+            {
+                // Кресты побеждают
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
