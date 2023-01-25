@@ -80,6 +80,7 @@ namespace Tic_tac_toe_Online
         {
             if (Turn(0, isPlayerCross))
             {
+
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
