@@ -83,6 +83,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button1.BackgroundImage = Properties.Resources.Cross;
+                button1.Enabled = false;
             }
         }
 
@@ -93,6 +95,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button2.BackgroundImage = Properties.Resources.Cross;
+                button2.Enabled = false;
             }
         }
 
@@ -103,6 +107,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button3.BackgroundImage = Properties.Resources.Cross;
+                button3.Enabled = false;
             }
         }
 
@@ -113,6 +119,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button4.BackgroundImage = Properties.Resources.Cross;
+                button4.Enabled = false;
             }
         }
 
@@ -123,6 +131,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button5.BackgroundImage = Properties.Resources.Cross;
+                button5.Enabled = false;
             }
         }
 
@@ -133,6 +143,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button6.BackgroundImage = Properties.Resources.Cross;
+                button6.Enabled = false;
             }
         }
 
@@ -143,6 +155,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button7.BackgroundImage = Properties.Resources.Cross;
+                button7.Enabled = false;
             }
         }
 
@@ -153,6 +167,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button8.BackgroundImage = Properties.Resources.Cross;
+                button8.Enabled = false;
             }
         }
 
@@ -163,6 +179,8 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
+                button9.BackgroundImage = Properties.Resources.Cross;
+                button9.Enabled = false;
             }
         }
     }
