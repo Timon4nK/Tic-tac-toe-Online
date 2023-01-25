@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -41,91 +42,111 @@
             // 
             // button1
             // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 175);
             this.button1.TabIndex = 0;
-            this.button1.Text = "1";
+            this.button1.Text = " ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Location = new System.Drawing.Point(375, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(175, 175);
             this.button3.TabIndex = 2;
-            this.button3.Text = "3";
+            this.button3.Text = " ";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button7
             // 
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Location = new System.Drawing.Point(12, 374);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(175, 175);
             this.button7.TabIndex = 6;
-            this.button7.Text = "7";
+            this.button7.Text = " ";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button9
             // 
+            this.button9.BackgroundImage = global::Tic_tac_toe_Online.Properties.Resources.Cross;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Location = new System.Drawing.Point(375, 374);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(175, 175);
             this.button9.TabIndex = 8;
-            this.button9.Text = "9";
+            this.button9.Text = " ";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button2
             // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Location = new System.Drawing.Point(194, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 175);
             this.button2.TabIndex = 1;
-            this.button2.Text = "2";
+            this.button2.Text = " ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button8
             // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Location = new System.Drawing.Point(194, 374);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(175, 175);
             this.button8.TabIndex = 7;
-            this.button8.Text = "8";
+            this.button8.Text = " ";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button4
             // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Location = new System.Drawing.Point(12, 193);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(175, 175);
             this.button4.TabIndex = 3;
-            this.button4.Text = "4";
+            this.button4.Text = " ";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Location = new System.Drawing.Point(194, 193);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(175, 175);
             this.button5.TabIndex = 4;
-            this.button5.Text = "5";
+            this.button5.Text = " ";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Location = new System.Drawing.Point(375, 193);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(175, 175);
             this.button6.TabIndex = 5;
-            this.button6.Text = "6";
+            this.button6.Text = " ";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 

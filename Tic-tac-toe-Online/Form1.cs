@@ -46,17 +46,17 @@ namespace Tic_tac_toe_Online
 
         public void CheckWin()
         {
-            if 
-               (field[0] == 0 && field[1] == 0 & field[2] == 0 || // верхняя строка
-                field[3] == 0 && field[4] == 0 & field[5] == 0 || // средняя строка
-                field[6] == 0 && field[7] == 0 & field[8] == 0 || // нижняя строка
+            if // Поменять 0 на 2
+               (field[0] == 2 && field[1] == 0 & field[2] == 0 || // верхняя строка
+                field[3] == 2 && field[4] == 0 & field[5] == 0 || // средняя строка
+                field[6] == 2 && field[7] == 0 & field[8] == 0 || // нижняя строка
 
-                field[0] == 0 && field[3] == 0 & field[6] == 0 || // левый столб
-                field[1] == 0 && field[4] == 0 & field[7] == 0 || // средний столб
-                field[2] == 0 && field[5] == 0 & field[8] == 0 || // правый столб
+                field[0] == 2 && field[3] == 0 & field[6] == 0 || // левый столб
+                field[1] == 2 && field[4] == 0 & field[7] == 0 || // средний столб
+                field[2] == 2 && field[5] == 0 & field[8] == 0 || // правый столб
 
-                field[0] == 0 && field[4] == 0 & field[8] == 0 || // первая диагональ
-                field[6] == 0 && field[4] == 0 & field[2] == 0)   // вторая диагональ
+                field[0] == 2 && field[4] == 0 & field[8] == 0 || // первая диагональ
+                field[6] == 2 && field[4] == 0 & field[2] == 0)   // вторая диагональ
             {
                 // Круги побеждают
             }
@@ -83,7 +83,7 @@ namespace Tic_tac_toe_Online
                 CheckWin();
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
-                button1.BackgroundImage = Properties.Resources.Cross;
+                button1.BackgroundImage = new Bitmap(Properties.Resources.Cross);
                 button1.Enabled = false;
             }
         }
@@ -96,7 +96,7 @@ namespace Tic_tac_toe_Online
                 Turn(opponent.ChooseTurn(field), !isPlayerCross);
                 CheckWin();
                 button2.BackgroundImage = Properties.Resources.Cross;
-                button2.Enabled = false;
+                //button2.Enabled = false;
             }
         }
 

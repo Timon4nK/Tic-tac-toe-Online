@@ -9,3 +9,14 @@ C:\Users\User\source\repos\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-t
 C:\Users\User\source\repos\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.exe
 C:\Users\User\source\repos\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.pdb
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\bin\Debug\Tic-tac-toe-Online.exe.config
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\bin\Debug\Tic-tac-toe-Online.exe
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\bin\Debug\Tic-tac-toe-Online.pdb
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic_tac_toe_Online.Form1.resources
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic_tac_toe_Online.Properties.Resources.resources
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.exe
+C:\Users\User\Desktop\Новая папка\Tic-tac-toe-Online\Tic-tac-toe-Online\obj\Debug\Tic-tac-toe-Online.pdb
