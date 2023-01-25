@@ -11,7 +11,51 @@ namespace Tic_tac_toe_Online
         bool isCross;
         public virtual int ChooseTurn(int[] field)
         {
-            return 0;
+            if (field[0] == 0 && field[2] == 2) // верхняя строка без центра
+            {
+                return 1;
+            }
+            else if (field[1] == 0 && field[2] == 2) // верхняя строка без лева
+            {
+                return 0;
+            }
+            else if (field[0] == 0 && field[1] == 2) // верхняя строка без права
+            {
+                return 2;
+            }
+
+            else if (field[3] == 0 && field[5] == 2) // средняя строка без центра
+            {
+                return 5;
+            }
+            else if (field[4] == 0 && field[5] == 2) // средняя строка без лева
+            {
+                return 4;
+            }
+            else if (field[3] == 0 && field[4] == 2) // средняя строка без права
+            {
+                return 6;
+            }
+
+            else if (field[7] == 0 && field[9] == 2) // нижняя строка без центра
+            {
+                return 8;
+            }
+            else if (field[8] == 0 && field[9] == 2) // нижняя строка без лева
+            {
+                return 7;
+            }
+            else if (field[7] == 0 && field[8] == 2) // нижняя строка без права
+            {
+                return 9;
+            }
+
+            else
+            {
+                Random rnd = new Random();
+                return rnd.Next(1, 9);
+
+            }
         }
 
         public Bot(bool isCross)
