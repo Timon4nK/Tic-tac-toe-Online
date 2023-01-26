@@ -1,24 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Tic_tac_toe_Online
 {
     public partial class Form1 : Form
     {
-        bool isPlayerCross = true;
-        int[] field = new int[] { // 0 - пусто, 1 - круг, 2 - крест
-                0, 0, 0,
-                0, 0, 0,
-                0, 0, 0
-        };
+        bool isPlayerCross;
+        int[] field = new int[9]; // 0 - пусто, 1 - круг, 2 - крест
+        int turnCnt = 0;
 
         public Form1()
         {
@@ -28,12 +18,13 @@ namespace Tic_tac_toe_Online
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            ResetGame();
         }
 
-        public void ResetGame()
+        public void ResetGame() // кодкрасныйкодкрасныйполныйсброс
         {
             isPlayerCross = true;
+            turnCnt = 0;
 
             for (int i = 0; i < 9; i++) field[i] = 0;
 
@@ -53,6 +44,7 @@ namespace Tic_tac_toe_Online
             if (field[cellNumber] == 0)
             {
                 field[cellNumber] = Convert.ToInt32(isPlayerCross) + 1;
+                turnCnt -=- 1;
                 return true;
             }
             return false;
@@ -72,7 +64,7 @@ namespace Tic_tac_toe_Online
                 field[0] == 2 && field[4] == 2 && field[8] == 2 || // первая диагональ
                 field[6] == 2 && field[4] == 2 && field[2] == 2)   // вторая диагональ
             {
-                if(MessageBox.Show("Do you want to restart?", "Cross wins!", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show("Do you want to restart?", "Cross wins!", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {
                     ResetGame();
                 }
@@ -81,7 +73,7 @@ namespace Tic_tac_toe_Online
                     this.Close();
                 }
             }
-            else if 
+            else if
                (field[0] == 1 && field[1] == 1 && field[2] == 1 || // верхняя строка
                 field[3] == 1 && field[4] == 1 && field[5] == 1 || // средняя строка
                 field[6] == 1 && field[7] == 1 && field[8] == 1 || // нижняя строка
@@ -102,16 +94,28 @@ namespace Tic_tac_toe_Online
                     this.Close();
                 }
             }
+            else if (turnCnt >= 9)
+            {
+                if (MessageBox.Show("Do you want to restart?", "It's draw!", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    ResetGame();
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (Turn(0))
             {
+                // Да, это тернарный оператор. Нет, сделать if не проще.
                 button1.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
-                                                        : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
+                                                        : new Bitmap(Properties.Resources.Zero);                
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -121,8 +125,8 @@ namespace Tic_tac_toe_Online
             {
                 button2.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -132,8 +136,8 @@ namespace Tic_tac_toe_Online
             {
                 button3.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -143,8 +147,8 @@ namespace Tic_tac_toe_Online
             {
                 button4.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -154,8 +158,8 @@ namespace Tic_tac_toe_Online
             {
                 button5.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -165,8 +169,8 @@ namespace Tic_tac_toe_Online
             {
                 button6.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -176,8 +180,8 @@ namespace Tic_tac_toe_Online
             {
                 button7.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -187,8 +191,8 @@ namespace Tic_tac_toe_Online
             {
                 button8.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
 
@@ -198,8 +202,8 @@ namespace Tic_tac_toe_Online
             {
                 button9.BackgroundImage = isPlayerCross ? new Bitmap(Properties.Resources.Cross)
                                                         : new Bitmap(Properties.Resources.Zero);
-                CheckWin();
                 isPlayerCross = !isPlayerCross;
+                CheckWin();
             }
         }
     }
